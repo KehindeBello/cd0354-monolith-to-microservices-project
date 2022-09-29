@@ -16,7 +16,7 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker-compose -f docker-compose-build.yaml build --parallel
-  - docker tag udagram-reverseproxy:v4 kehindebello/udagram-reverseproxy:latest
+  - docker tag reverseproxy:v4 kehindebello/reverseproxy:latest
   - docker tag udagram-api-user:v4 kehindebello/udagram-api-user:latest
   - docker tag udagram-api-feed:v4 kehindebello/udagram-api-feed:latest
   - docker tag udagram-frontend:v4 kehindebello/udagram-frontend:latest
